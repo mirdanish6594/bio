@@ -1,0 +1,151 @@
+body {
+  background-color: white;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #66BFBF;
+  font-size: 562.5%; /* This is equivalent of 90px and by using percentage or em, if the user changes the fonts
+  size of the browser then it would also change otherwise it wouldn't. Or we can use other unit called 'em'
+  and it is equivalent to 16px.Mostly em and percentage are used for visually impared people.
+  1em = 16px = 100%
+
+  We can also use another unit called "rem" i.e, root em. And it ignores the font-size set in the parent element(here body)
+  otherwise it would add to the font-size set in the parent element.*/
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', serif;
+  line-height: 2;
+}
+h2 {
+  color: #66BFBF;
+  font-family: 'Montserrat', serif;
+  font-size: 2.5rem;
+}
+.web {
+  color: #66BFBF;
+  font-family: 'Montserrat', serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', serif;
+}
+
+.top-container {
+  background-color: lightblue;
+  position: relative;
+  padding-top: 100px;
+}
+
+.profile{
+  width: 30%;
+  margin: 30px auto 30px auto;
+}
+ /* The position of the div is static by default i.e, if we give it some top margin,
+  it will make the blue box below it to move as well and won't overlap but we can change the position
+  to relative and then it would overlap.We can also change the position to absolute i.e, it would
+  change the margin wrt the parent element. Or we can change the position to fixed, due to this when
+  we scroll through our website, it wonll move along with the scrolling.*/
+
+
+.bottom-container {
+  color: #11999E;
+  height: 130px;
+  padding-top: 30px;
+  background-color: #66BFBF;
+  width: 100%;
+}
+a:hover {
+  color: #EaF6F6;
+}
+.footer-link {
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 18px;
+  color: #11999E;
+}
+.copyright {
+  padding-top: 26px;
+  color: #EAF6F6;
+  font-size: 14px;
+}
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.top-cloud {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+}
+.my-image {
+  border-radius: 80px;
+}
+
+.webdev-1 {
+  float: left;
+  width: 25%;
+  margin-right: 20px;
+}
+
+.webdev-2 {
+  float: right; /* We can use another property called clear: left or right; So, it is
+  opposite of float.*/
+  width: 25%;
+  margin-right: 20px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 50px auto 50px auto;
+  text-align: left;
+  line-height: 2;
+  padding-bottom: 30px;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 6px;
+  width: 4%;
+  border-color: lightgrey;
+}
+
+.touch {
+  width: 50%;
+  margin: 50px auto 50px auto;
+}
+
+input[type=submit] {
+  background: linear-gradient(to right, #11999E, #66BFBF);
+  padding: 10px;
+  border-width: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  margin: 50px auto 70px auto;
+}
+
+input[type=submit]:hover {
+background: #74c7b8;
+animation-name: first-one;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-delay: 2s;
+animation-iteration-count: 2;
+animation-direction: normal;
+}
+
+@keyframes first-one {
+  to {
+    background: #74c7b8;
+  }
+}
